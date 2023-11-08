@@ -1,36 +1,38 @@
 ﻿@page "/"
+@using Microsoft.AspNetCore
+@using System.Drawing;
+@using QRCoder;
+@using System.Drawing.Imaging;
 
-<PageTitle>Index</PageTitle>
+<PageTitle>QR Code Generator</PageTitle>
+
+    <div class="input-group">
+        <div class="col-sm-6">
+            <label class="mb-3">QR Code Text</label>
+            <input type="text" @bind-value="QRCodeText" placeholder="Enter your text" class="form-control mb-4" />
+            <button @onclick="GenerateQRCode" class="btn btn-success">Generate QR Code</button>
+        </div>
+    </div>
 
 
-<h3>Checking attandance</h3>
-
-<ul>
-    @foreach (var todo in todos)
-    {
-        <li>@todo.Title</li>
-    }
-</ul>
-
-<input placeholder="course code" @bind="newTodo" />
-<button @onclick="AddTodo">Add code</button>
+<img alt ="" src="@QRByte" width="300" class="mb-5" />
 
 @code {
-public class TodoItem
-{
-    public string? Title { get; set; }
-    public bool IsDone { get; set; } = false;
-}
+    public string QRCodeText { get; set; }
+    public string QRByte = "";
 
-    private List<TodoItem> todos = new();
-    private string? newTodo;
-
-    private void AddTodo()
+    public void GenerateQRCode()
     {
-        if (!string.IsNullOrWhiteSpace(newTodo))
+        if (!string.IsNullOrEmpty(QRCodeText))
         {
-            todos.Add(new TodoItem { Title = newTodo });
-            newTodo = string.Empty;
+            using MemoryStream ms = new();
+            QRCodeGenerator qrCodeGenerate = new();
+            QRCodeData qrCodeData = qrCodeGenerate.CreateQrCode(QRCodeText, QRCodeGenerator.ECCLevel.Q);
+            QRCode qrCode = new(qrCodeData);
+            using Bitmap qrBitMap = qrCode.GetGraphic(20);
+            qrBitMap.Save(ms, ImageFormat.Png);
+            string base64 = Convert.ToBase64String(ms.ToArray());
+            QRByte = string.Format("data:image/png;base64,{0}", base64);
         }
     }
 }
