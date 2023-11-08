@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "V2D+AFEXm8DZK7ffwpYXB5zXSSTWisTp569UmgeBY8y9JmqhR7RMgY9gKtonHBG1J63bfCDa/OsldCj8+VzbKA==",
+  "dgSpecHash": "Vwbi/eaU7ikkgft51adn7qKBjKtHP78lRB0eBq05UDFmL7r7XQMhEGZUciQH16LuUZceGosLdMAsr/jwEVRnjQ==",
   "success": true,
-  "projectFilePath": "/home/user/Documents/IE_cours/cloud/FTL_attendance_server/FTL_attendance_server/FTL_attendance_server.csproj",
+  "projectFilePath": "/home/user/Documents/cloud_project/FTL_attendance_server/FTL_attendance_server/FTL_attendance_server.csproj",
   "expectedPackageFiles": [
-    "/home/user/.nuget/packages/microsoft.netcore.app.host.linux-x64/6.0.24/microsoft.netcore.app.host.linux-x64.6.0.24.nupkg.sha512"
+    "/home/user/.nuget/packages/microsoft.netcore.platforms/3.1.0/microsoft.netcore.platforms.3.1.0.nupkg.sha512",
+    "/home/user/.nuget/packages/microsoft.win32.systemevents/4.7.0/microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "/home/user/.nuget/packages/qrcoder/1.4.2/qrcoder.1.4.2.nupkg.sha512",
+    "/home/user/.nuget/packages/system.drawing.common/4.7.0/system.drawing.common.4.7.0.nupkg.sha512"
   ],
   "logs": []
 }
