@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "V2D+AFEXm8DZK7ffwpYXB5zXSSTWisTp569UmgeBY8y9JmqhR7RMgY9gKtonHBG1J63bfCDa/OsldCj8+VzbKA==",
+  "success": true,
+  "projectFilePath": "/home/user/Documents/IE_cours/cloud/FTL_attendance_server/FTL_attendance_server/FTL_attendance_server.csproj",
+  "expectedPackageFiles": [
+    "/home/user/.nuget/packages/microsoft.netcore.app.host.linux-x64/6.0.24/microsoft.netcore.app.host.linux-x64.6.0.24.nupkg.sha512"
+  ],
+  "logs": []
+}

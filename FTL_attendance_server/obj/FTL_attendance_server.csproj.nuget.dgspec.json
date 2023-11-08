@@ -1,0 +1,70 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/user/Documents/IE_cours/cloud/FTL_attendance_server/FTL_attendance_server/FTL_attendance_server.csproj": {}
+  },
+  "projects": {
+    "/home/user/Documents/IE_cours/cloud/FTL_attendance_server/FTL_attendance_server/FTL_attendance_server.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/user/Documents/IE_cours/cloud/FTL_attendance_server/FTL_attendance_server/FTL_attendance_server.csproj",
+        "projectName": "FTL_attendance_server",
+        "projectPath": "/home/user/Documents/IE_cours/cloud/FTL_attendance_server/FTL_attendance_server/FTL_attendance_server.csproj",
+        "packagesPath": "/home/user/.nuget/packages/",
+        "outputPath": "/home/user/Documents/IE_cours/cloud/FTL_attendance_server/FTL_attendance_server/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/user/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Host.linux-x64",
+              "version": "[6.0.24, 6.0.24]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.113/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

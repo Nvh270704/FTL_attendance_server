@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/FTL_attendance_server.props" />
+</Project>
