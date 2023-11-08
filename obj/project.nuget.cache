@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Vwbi/eaU7ikkgft51adn7qKBjKtHP78lRB0eBq05UDFmL7r7XQMhEGZUciQH16LuUZceGosLdMAsr/jwEVRnjQ==",
+  "dgSpecHash": "XOMTHY6zWWDGPB3M7RVyLaG9PVX3mbRuXnOnIArgE7try/y+IcSHMdASgprcApbKpSftPNg8HPtJQ/dt6bXHyQ==",
   "success": true,
-  "projectFilePath": "/home/user/Documents/cloud_project/FTL_attendance_server/FTL_attendance_server/FTL_attendance_server.csproj",
+  "projectFilePath": "/home/user/Documents/cloud_project/FTL_attendance_server/FTL_attendance_server.csproj",
   "expectedPackageFiles": [
     "/home/user/.nuget/packages/microsoft.netcore.platforms/3.1.0/microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "/home/user/.nuget/packages/microsoft.win32.systemevents/4.7.0/microsoft.win32.systemevents.4.7.0.nupkg.sha512",

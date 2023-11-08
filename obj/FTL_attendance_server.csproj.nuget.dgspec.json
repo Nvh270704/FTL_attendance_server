@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/user/Documents/cloud_project/FTL_attendance_server/FTL_attendance_server/FTL_attendance_server.csproj": {}
+    "/home/user/Documents/cloud_project/FTL_attendance_server/FTL_attendance_server.csproj": {}
   },
   "projects": {
-    "/home/user/Documents/cloud_project/FTL_attendance_server/FTL_attendance_server/FTL_attendance_server.csproj": {
+    "/home/user/Documents/cloud_project/FTL_attendance_server/FTL_attendance_server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/user/Documents/cloud_project/FTL_attendance_server/FTL_attendance_server/FTL_attendance_server.csproj",
+        "projectUniqueName": "/home/user/Documents/cloud_project/FTL_attendance_server/FTL_attendance_server.csproj",
         "projectName": "FTL_attendance_server",
-        "projectPath": "/home/user/Documents/cloud_project/FTL_attendance_server/FTL_attendance_server/FTL_attendance_server.csproj",
+        "projectPath": "/home/user/Documents/cloud_project/FTL_attendance_server/FTL_attendance_server.csproj",
         "packagesPath": "/home/user/.nuget/packages/",
-        "outputPath": "/home/user/Documents/cloud_project/FTL_attendance_server/FTL_attendance_server/obj/",
+        "outputPath": "/home/user/Documents/cloud_project/FTL_attendance_server/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/user/.nuget/NuGet/NuGet.Config"
