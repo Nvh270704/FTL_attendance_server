@@ -160,3 +160,6 @@
 /home/user/FTL_attendance_server/bin/Debug/net6.0/Blazored.Localisation.dll
 /home/user/FTL_attendance_server/bin/Debug/net6.0/Microsoft.AspNetCore.Blazor.dll
 /home/user/FTL_attendance_server/bin/Debug/net6.0/Mono.WebAssembly.Interop.dll
+/home/user/Documents/cloud_project/FTL_attendance_server/bin/Debug/net6.0/Blazored.Localisation.dll
+/home/user/Documents/cloud_project/FTL_attendance_server/bin/Debug/net6.0/Microsoft.AspNetCore.Blazor.dll
+/home/user/Documents/cloud_project/FTL_attendance_server/bin/Debug/net6.0/Mono.WebAssembly.Interop.dll

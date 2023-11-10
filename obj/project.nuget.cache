@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "c7pZeljB1gkKeQWAgtMxOjtnBNrsq9NJHHyr4MXnQ7smeUE74CNCd6ngRh7jndn/HZ1AB9lzfDPxsW1OY3nMXg==",
+  "dgSpecHash": "bOlImgJeNCGHltUQT+vW2Cq1rttHOabPwb5tdnYhvuYrhUwU3KLPe/XvO6t+gNIy1D1SYYQmN3tYHpu+MyrY9w==",
   "success": true,
-  "projectFilePath": "/home/user/FTL_attendance_server/FTL_attendance_server.csproj",
+  "projectFilePath": "/home/user/Documents/cloud_project/FTL_attendance_server/FTL_attendance_server.csproj",
   "expectedPackageFiles": [
     "/home/user/.nuget/packages/blazored.localisation/2.0.0/blazored.localisation.2.0.0.nupkg.sha512",
     "/home/user/.nuget/packages/microsoft.aspnetcore.authorization/3.1.1/microsoft.aspnetcore.authorization.3.1.1.nupkg.sha512",
@@ -24,8 +24,7 @@
     "/home/user/.nuget/packages/microsoft.win32.systemevents/4.7.0/microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "/home/user/.nuget/packages/mono.webassembly.interop/3.2.0-preview1.20073.1/mono.webassembly.interop.3.2.0-preview1.20073.1.nupkg.sha512",
     "/home/user/.nuget/packages/qrcoder/1.4.2/qrcoder.1.4.2.nupkg.sha512",
-    "/home/user/.nuget/packages/system.drawing.common/4.7.0/system.drawing.common.4.7.0.nupkg.sha512",
-    "/home/user/.nuget/packages/microsoft.netcore.app.host.linux-x64/6.0.24/microsoft.netcore.app.host.linux-x64.6.0.24.nupkg.sha512"
+    "/home/user/.nuget/packages/system.drawing.common/4.7.0/system.drawing.common.4.7.0.nupkg.sha512"
   ],
   "logs": []
 }
