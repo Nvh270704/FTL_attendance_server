@@ -10,6 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Blazored.Localisation" Version="2.0.0" />
     <PackageReference Include="QRCoder" Version="1.4.2" />
   </ItemGroup>
 

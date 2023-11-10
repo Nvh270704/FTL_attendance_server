@@ -7,9 +7,12 @@
     <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">/home/user/.nuget/packages/</NuGetPackageRoot>
     <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">/home/user/.nuget/packages/</NuGetPackageFolders>
     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
-    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.7.0</NuGetToolVersion>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.4.2</NuGetToolVersion>
   </PropertyGroup>
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <SourceRoot Include="/home/user/.nuget/packages/" />
   </ItemGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)blazored.localisation/2.0.0/buildTransitive/Blazored.Localisation.props" Condition="Exists('$(NuGetPackageRoot)blazored.localisation/2.0.0/buildTransitive/Blazored.Localisation.props')" />
+  </ImportGroup>
 </Project>

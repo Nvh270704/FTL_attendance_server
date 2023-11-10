@@ -30,3 +30,8 @@ docker run -p 8000:80 ftl
 Connect to the webpage
 
 http://127.0.0.1:8000
+
+
+## Generation of the code
+
+sha-256(timestamp + salt)
