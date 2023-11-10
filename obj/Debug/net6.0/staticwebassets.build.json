@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "dJcMbjQ9wcbJCbXGJfTHNas85QKbbzLksCq/Qo/s3mI=",
+  "Hash": "L6waNjam3bknl8y2eRoOTU2TcB6iNO2rYV8rrDyN17U=",
   "Source": "FTL_attendance_server",
   "BasePath": "_content/FTL_attendance_server",
   "Mode": "Default",
@@ -16,6 +16,23 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "/home/user/.nuget/packages/blazored.localisation/2.0.0/staticwebassets/blazored-localisation.js",
+      "SourceId": "Blazored.Localisation",
+      "SourceType": "Package",
+      "ContentRoot": "/home/user/.nuget/packages/blazored.localisation/2.0.0/staticwebassets/",
+      "BasePath": "_content/Blazored.Localisation",
+      "RelativePath": "blazored-localisation.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/home/user/.nuget/packages/blazored.localisation/2.0.0/staticwebassets/blazored-localisation.js"
+    },
     {
       "Identity": "/home/user/Documents/cloud_project/FTL_attendance_server/obj/Debug/net6.0/scopedcss/bundle/FTL_attendance_server.styles.css",
       "SourceId": "FTL_attendance_server",

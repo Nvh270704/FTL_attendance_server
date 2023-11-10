@@ -1,5 +1,7 @@
 FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS base
+# inject linux dependancy here
 RUN apt-get update && apt-get install -y libgdiplus
+#####
 WORKDIR /app
 EXPOSE 80
 EXPOSE 443

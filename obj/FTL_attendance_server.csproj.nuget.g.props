@@ -12,4 +12,7 @@
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <SourceRoot Include="/home/user/.nuget/packages/" />
   </ItemGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)blazored.localisation/2.0.0/buildTransitive/Blazored.Localisation.props" Condition="Exists('$(NuGetPackageRoot)blazored.localisation/2.0.0/buildTransitive/Blazored.Localisation.props')" />
+  </ImportGroup>
 </Project>
