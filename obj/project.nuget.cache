@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bOlImgJeNCGHltUQT+vW2Cq1rttHOabPwb5tdnYhvuYrhUwU3KLPe/XvO6t+gNIy1D1SYYQmN3tYHpu+MyrY9w==",
+  "dgSpecHash": "dK4pNbqVg6ipc5my7js7OnHr3ICWWWKZ90DOtxSGYBd2tNAJNzYM5jS+lpbqTCvbvsEh4h7Nrc/YsdlA0bYKTQ==",
   "success": true,
-  "projectFilePath": "/home/user/Documents/cloud_project/FTL_attendance_server/FTL_attendance_server.csproj",
+  "projectFilePath": "/home/user/Documents/IE/Y2/S1/cloud/FTL_attendance_server/FTL_attendance_server.csproj",
   "expectedPackageFiles": [
     "/home/user/.nuget/packages/blazored.localisation/2.0.0/blazored.localisation.2.0.0.nupkg.sha512",
     "/home/user/.nuget/packages/microsoft.aspnetcore.authorization/3.1.1/microsoft.aspnetcore.authorization.3.1.1.nupkg.sha512",

@@ -1,0 +1,29 @@
+@page "/input"
+
+
+
+<h3>Greet Me!</h3>
+
+<form>
+    <label for="name">Enter your name:</label>
+    <input type="text" id="name" @bind="userName" />
+    <button type="button" @onclick="DisplayGreeting">Say Hello</button>
+</form>
+
+@if (!string.IsNullOrEmpty(greeting))
+{
+    <p>@greeting</p>
+}
+
+@code {
+    private string userName;
+    private string greeting;
+
+    private void DisplayGreeting()
+    {
+        if (!string.IsNullOrEmpty(userName))
+        {
+            greeting = $"Hello, {userName}!";
+        }
+    }
+}

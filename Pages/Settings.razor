@@ -1,0 +1,29 @@
+@page "/settings"
+
+
+<form>
+    <label for="name">Enter StudentID:</label>
+    <input type="text" id="name" @bind="userName" />
+</form>
+
+
+<button type="button" @onclick="DisplayGreeting">Save</button>
+
+
+@if (!string.IsNullOrEmpty(greeting))
+{
+    <p>@greeting</p>
+}
+
+@code {
+    private string userName;
+    private string greeting;
+
+    private void DisplayGreeting()
+    {
+        if (!string.IsNullOrEmpty(userName))
+        {
+            greeting = $"Save";
+        }
+    }
+}

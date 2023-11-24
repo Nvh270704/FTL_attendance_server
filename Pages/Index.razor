@@ -18,22 +18,32 @@
     
     public string QRByte = "";
 
-    private string currentTime;
+    private String timeStamp;
     private Timer timer;
+
+    Random rnd = new Random();
+    string rndString = "";
 
 
     // Called when page is loaded
     protected override void OnInitialized()
     {
-        timer = new Timer(UpdateTime, null, 0, DELAY); // 10 seconds delay
+        timer = new Timer(UpdateTime, null, 0, DELAY); // 1 seconds delay
     }
+
 
 
     // Called by timer every DELAY miliseconds
     private void UpdateTime(object state)
     {
-        currentTime = DateTime.Now.ToString("HH:mm:ss");
-        QRByte = GenerateQRCode(currentTime);
+        rnd = new Random();
+        rndString = rnd.NextInt64().ToString();
+        
+        timeStamp = DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString();
+        
+        QRByte = GenerateQRCode(rndString);
+
+        // call azure functon to add code to myAQL
         
         InvokeAsync(StateHasChanged); // Notify Blazor to update the UI
     }
