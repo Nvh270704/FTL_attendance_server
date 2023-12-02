@@ -10,27 +10,32 @@
 <PageTitle>FTL</PageTitle>
 
 
-<img id="updateDiv" src="@QRByte" width="600"/>
+<form>
+    <label for="courseID">Enter the course id:</label>
+    <input type="text" id="name" @bind="courseId" />
+    <button type="button" @onclick="DisplayQR">display QR-code</button>
+</form>
+
+@if (!string.IsNullOrEmpty(courseId))
+{
+    <img id="updateDiv" src="@QRByte" width="600"/>
+}
+
 
 
 @code {
-    const int DELAY = 1000; 
-    
+    const int DELAY = 1000;
+    private Timer timer;
+
     public string QRByte = "";
 
     private String timeStamp;
-    private Timer timer;
-
+    
+    
     Random rnd = new Random();
+
     string rndString = "";
-
-
-    // Called when page is loaded
-    protected override void OnInitialized()
-    {
-        timer = new Timer(UpdateTime, null, 0, DELAY); // 1 seconds delay
-    }
-
+    string courseId = "";
 
 
     // Called by timer every DELAY miliseconds
@@ -40,7 +45,9 @@
         rndString = rnd.NextInt64().ToString();
         
         timeStamp = DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString();
-        
+        rndString += "|";
+        rndString += courseId;
+
         QRByte = GenerateQRCode(rndString);
 
         // call azure functon to add code to myAQL
@@ -63,4 +70,10 @@
 
         return(string.Format("data:image/png;base64,{0}", base64));
     }
+
+    private void DisplayQR()
+    {
+        timer = new Timer(UpdateTime, null, 0, DELAY);
+    }
+
 }
