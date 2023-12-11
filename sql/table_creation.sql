@@ -22,6 +22,12 @@ CREATE TABLE `enroled_course` (
   `student_id` integer
 );
 
+CREATE TABLE `teached_course` (
+  `enroled_course_id` integer PRIMARY KEY,
+  `course_id` integer,
+  `teacher_id` integer
+);
+
 CREATE TABLE `attendance` (
   `attendance_id` integer PRIMARY KEY,
   `session_id` integer,
@@ -57,9 +63,13 @@ ALTER TABLE `course` ADD FOREIGN KEY (`course_id`) REFERENCES `enroled_course` (
 
 ALTER TABLE `student` ADD FOREIGN KEY (`student_id`) REFERENCES `enroled_course` (`student_id`);
 
+ALTER TABLE `course` ADD FOREIGN KEY (`course_id`) REFERENCES `teached_course` (`course_id`);
+
+ALTER TABLE `teacher` ADD FOREIGN KEY (`teacher_id`) REFERENCES `teached_course` (`teacher_id`);
+
 ALTER TABLE `attendance` ADD FOREIGN KEY (`session_id`) REFERENCES `session` (`session_id`);
 
-ALTER TABLE `student` ADD FOREIGN KEY (`student_id`) REFERENCES `attendance` (`student_id`);
+ALTER TABLE `attendance` ADD FOREIGN KEY (`student_id`) REFERENCES `student` (`student_id`);
 
 ALTER TABLE `session` ADD FOREIGN KEY (`course_id`) REFERENCES `course` (`course_id`);
 
