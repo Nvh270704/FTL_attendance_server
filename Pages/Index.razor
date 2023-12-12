@@ -5,6 +5,7 @@
 @using QRCoder;
 @using System.Drawing.Imaging;
 @using System.Globalization;
+@using MySql.Data.MySqlClient;
 
 
 <PageTitle>FTL</PageTitle>
@@ -29,7 +30,7 @@
 
     public string QRByte = "";
 
-    private String timeStamp;
+    private String timeStamp = "";
     
     
     Random rnd = new Random();
@@ -37,18 +38,23 @@
     string rndString = "";
     string courseId = "";
 
+    string connectionString = "Server=dockerlab.westeurope.cloudapp.azure.com;Database=CC_7;User=CC_7;Password=FOMArb-4uqHLFp2-W4uAYLEj2qnop0UygOkoq17DWEk;";
+    string otherrnd = "";
+
 
     // Called by timer every DELAY miliseconds
     private void UpdateTime(object state)
     {
         rnd = new Random();
         rndString = rnd.NextInt64().ToString();
+        otherrnd = rnd.NextInt64().ToString();
         
         timeStamp = DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString();
         rndString += "|";
         rndString += courseId;
 
         QRByte = GenerateQRCode(rndString);
+        InsertData(connectionString, timeStamp, otherrnd,courseId, rndString);
 
         // call azure functon to add code to myAQL
         
@@ -74,6 +80,35 @@
     private void DisplayQR()
     {
         timer = new Timer(UpdateTime, null, 0, DELAY);
+    }
+
+
+
+    static void InsertData(string connectionString, string timeStamp, string UID, string session, string code)
+    {
+        using (MySqlConnection connection = new MySqlConnection(connectionString))
+        {
+            connection.Open();
+
+            string insertDataQuery = "INSERT INTO qr_code (qr_code_id, server_timestamp, session_id, random_code) VALUES (@prime, @timestamp, @session, @code)";
+
+            long parsedTimestamp = long.Parse(timeStamp);
+            int parsedSession = int.Parse(session);
+
+            
+            using (MySqlCommand command = new MySqlCommand(insertDataQuery, connection))
+            {
+                command.Parameters.AddWithValue("@prime", UID);
+                command.Parameters.AddWithValue("@timestamp", parsedTimestamp);
+                command.Parameters.AddWithValue("@session", parsedSession);
+                command.Parameters.AddWithValue("@code", code);
+                command.ExecuteNonQuery();
+                System.Console.WriteLine("succsess!");
+            }
+            
+
+
+        }
     }
 
 }
